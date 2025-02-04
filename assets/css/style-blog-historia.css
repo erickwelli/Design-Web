@@ -188,6 +188,7 @@ main .container .container-text .continue-lendo{
 
 main .container .container-text .continue-lendo a{
     font-weight: 300;
+    color: #273644;
     font-style: italic;
     padding: 6px 25px 6px 11px;
     box-sizing: border-box;
@@ -409,8 +410,6 @@ main .container .container-text article{
 
 main .container .serie-posts{
     width: 100%;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex-direction: column;
     display: flex;
 }
@@ -434,7 +433,6 @@ main .container .serie-posts .serie-posts-titulo{
 
 .container .historias-posts{
     display: flex;
-    flex-direction: row;
     gap: 25px;
     margin-top: 35px;
 }
@@ -470,6 +468,11 @@ main .container .serie-posts .serie-posts-titulo{
     color: #8D9AA6;
     font-weight: 300;
     font-style: italic;
+}
+
+main .container .serie-posts .link-coletanea{
+    display: flex;
+    justify-content: space-between;
 }
 footer{
     margin-top: 120px;
