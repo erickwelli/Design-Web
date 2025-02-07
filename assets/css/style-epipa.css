@@ -1,9 +1,48 @@
 body{
-    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+h1, h2, h3{
+    margin: 0;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+.container-header-footer{
+    display: flex;
+    width: 1250px;
 }
 
 header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #203C86;
+    align-items: center;
+}
 
+header .linha{
+    width: 100%;
+    height: 1px;
+    background-color: red;
+}
+
+header .container-header-footer{
+    justify-content: space-between;
+}
+
+header .header-redes-sociais{
+    display: flex;
+    align-items: flex-end;
 }
 
 main{
