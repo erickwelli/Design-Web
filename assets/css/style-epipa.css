@@ -182,7 +182,7 @@ main .container-main .sobre-praia-pipa .linha-amarela{
 main .container-main .sobre-praia-pipa .praia-texto-e-imagem{
     display: flex;
     gap: 20px;
-    
+    flex-direction: row-reverse;
 }
 
 .container-main .sobre-praia-pipa .praia-texto-e-imagem p{
@@ -238,7 +238,7 @@ main .secao-fotos-praias .fotos-praias figcaption{
     padding-top: 10px;
 }
 
-main .secao-fotos-praias span{
+main .secao-fotos-praias div span{
     font-size: 14px;
     color: #2648A1;
     font-family: 'Montserrat', sans-serif;
@@ -249,7 +249,6 @@ main .secao-fotos-praias h2{
     color: #2648A1;
     font-family: 'Montserrat', sans-serif;
 }
-
 footer{
     display: flex;
     align-items: center;
@@ -258,16 +257,13 @@ footer{
     height: 100%;
     background:linear-gradient(130deg, #0D3F82 23.84%,#001736 73.02%);
 }
-
 footer .container-footer{
     flex-wrap: wrap;
     display: flex;
     width: 70%;
     padding: 60px 0;
     justify-content: space-between;
-
 }
-
 footer .container-footer .left{
     display: flex;
     flex-direction: column;
@@ -277,7 +273,6 @@ footer .container-footer .left{
     font-weight: 300;
     color: #F9FAFC;
 }
-
 footer .container-footer .left .contatos{
     display: flex;
     flex-direction: column;
@@ -287,16 +282,13 @@ footer .container-footer .left .contatos{
     display: flex;
     gap: 20px;
 }
-
 .container-footer .left .contatos .footer-redes-sociais{
     display: flex;
     gap: 24px;
 }
-
 .peso-700{
     font-weight: 700;
 }
-
 footer .container-footer .middle{
     display: flex;
     flex-direction: column;
@@ -305,22 +297,18 @@ footer .container-footer .middle{
     gap: 20px;
     color: #E0E6ED;
 }
-
 footer .container-footer .middle nav{
     display: flex;
     gap: 24px;
 }
-
 .container-footer .middle nav menu{
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-
 .container-footer .middle nav menu a{
     color: #C0CCDA;
 }
-
 footer .container-footer .right{
     width: 270px;
     display: flex;
@@ -329,12 +317,10 @@ footer .container-footer .right{
     border-radius: 6px;
     padding: 32px 24px;
 }
-
 footer .container-footer .right h3{
     color: #1F2D3D;
     padding-bottom: 15px;
 }
-
 footer .container-footer .right span{
     color: #8492A6;
 }
@@ -348,7 +334,6 @@ footer .container-footer .right .text-card-footer{
     flex-direction: column;
     padding-bottom: 35px;
 }
-
 footer .container-footer .right .butao-telegram{
     
     display: flex;
@@ -357,87 +342,133 @@ footer .container-footer .right .butao-telegram{
     padding: 12px 22px;
     border-radius: 5px;
 }
-
 @media (max-width: 568px){
     header{
-        width: 100%;
-        display: flex;
-        background-color: #203C86;
         padding: 12px 16px;
         box-sizing: border-box;
         margin-bottom: 24px;
         flex-direction: row;
         justify-content: center;
+        height: auto;
     }
+
+    p{
+        width: 100%;
+    }
+
     header .container-logo-e-navegacao .menu{
         display: flex;
     }
     header .linha{
-        width: 100%;
-        height: 1px;
-        background-color: #fff;
-        opacity: 0.2; 
         display: none;
-        margin: 12px 0;
     }
-    
     header .container-redes-sociais{
-        display: flex;
-        align-items: center;
         display: none;
     }
-    
-    header .container-redes-sociais .redes-sociais{
-        display: flex;
-        width: 100%;
-        gap: 50px;
-        justify-content: end;
-        color: #EFF2F7;
-        display: none;
-        align-items: center;
-        font-size: 11px;
-        font-weight: 300;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    header .container-redes-sociais .redes-sociais nav{
-        display: flex;
-        display: none;
-        gap: 20px;
-    }
-    
-    .container-redes-sociais .redes-sociais nav a{
-        display: flex;
-        align-items: center;
-        display: none;
-    }
-    
+
     header .container-logo-e-navegacao{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        width: 100%;
     }
-    
     header .container-logo-e-navegacao menu{
-        display: flex;
-        gap: 45px;
         display: none;
-        font-family: 'Montserrat', sans-serif;
     }
-    
     header .container-logo-e-navegacao menu a:nth-child(1){
-        font-weight: 700;
-        text-decoration: underline;
-        text-underline-offset: 24px;
-        text-decoration-color: #FFC82C;
-        text-decoration-thickness: 4px;
         display: none;
     }
 
     main{
-        display: none;
+        margin-bottom: 60px;
+    }
+    
+    main .container-main{
+        padding: 0 16px;
+        box-sizing: border-box; 
+    }
+    main .container-main .titulo-principal{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+    }
+    main .container-main .titulo-principal div{
+        width: 100%;
+        text-align:end;
+    }
+    
+    main .container-main .titulo-principal div span{
+        font-size: 21px;
+        color: #2648A1;
+        font-style: italic;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    main .container-main .titulo-principal div p{
+        color: #4D535B;
+        font-size: 11px;
+        width: 100%;
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    main .container-main .icon-pipa{
+        margin: 50px 0 75px 0;
+    }
+    main .container-main figure img{
+        width: 278px;
+    }
+    
+    main .container-main .texto-inicial{
+        margin-bottom: 40px;
+    }
+    
+
+    
+    main .container-main .sobre-praia-pipa .linha-amarela{
+        border-top: #FFC82C 4px solid;
+        width: 100px;
+        margin-top: 10px;
+    }
+    
+    main .container-main .sobre-praia-pipa .praia-texto-e-imagem{
+        display: flex;
+        gap: 20px;
+    }
+    
+    .container-main .sobre-praia-pipa .praia-texto-e-imagem p{
+        width: 100%;
+    }
+    .container-main .sobre-praia-pipa .praia-texto-e-imagem figure{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;    
+        gap: 10px;
     }
 
+    
+    .container-main .sobre-praia-pipa .praia-texto-e-imagem img{
+    width: 100%px;
+    transform: scale(10%);
+    }
+
+    
+    .sobre-praia-pipa .praia-texto-e-imagem figure figcaption{
+        text-align: left;
+        border: 2px solid;
+        width: 100%;
+        border-top: none;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 15px 0 8px 15px;
+    }
+    
+
+    main .secao-fotos-praias .fotos-praias{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        display: none;
+    }
     footer{
         display: flex;
         align-items: center;
