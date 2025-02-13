@@ -352,10 +352,18 @@ footer .container-footer .right .butao-telegram{
         flex-direction: row;
         justify-content: center;
         height: auto;
+<<<<<<< HEAD
     }
     p{
         width: 100%;
+=======
+>>>>>>> 79ab4f11acb10e1fc7f67ebaedcf67de9c3c5e56
     }
+
+    p{
+        width: 100%;
+    }
+
     header .container-logo-e-navegacao .menu{
         display: flex;
     }
@@ -365,6 +373,10 @@ footer .container-footer .right .butao-telegram{
     header .container-redes-sociais{
         display: none;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 79ab4f11acb10e1fc7f67ebaedcf67de9c3c5e56
     header .container-logo-e-navegacao{
         width: 100%;
     }
@@ -374,6 +386,7 @@ footer .container-footer .right .butao-telegram{
     header .container-logo-e-navegacao menu a:nth-child(1){
         display: none;
     }
+<<<<<<< HEAD
     main{
         margin-bottom: 60px;
     }
@@ -384,10 +397,109 @@ footer .container-footer .right .butao-telegram{
         box-sizing: border-box; 
     }
     main .container-main .titulo-principal{
+=======
+
+    main{
+        margin-bottom: 60px;
+    }
+    
+    main .container-main{
+        padding: 0 16px;
+        box-sizing: border-box; 
+    }
+    main .container-main .titulo-principal{
+        display: flex;
+        flex-direction: column;
+>>>>>>> 79ab4f11acb10e1fc7f67ebaedcf67de9c3c5e56
         width: 90%;
         gap: 20px;
     }
     main .container-main .titulo-principal div{
+<<<<<<< HEAD
+=======
+        width: 100%;
+        text-align:end;
+    }
+    
+    main .container-main .titulo-principal div span{
+        font-size: 21px;
+        color: #2648A1;
+        font-style: italic;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    main .container-main .titulo-principal div p{
+        color: #4D535B;
+        font-size: 11px;
+        width: 100%;
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    main .container-main .icon-pipa{
+        margin: 50px 0 75px 0;
+    }
+    main .container-main figure img{
+        width: 278px;
+    }
+    
+    main .container-main .texto-inicial{
+        margin-bottom: 40px;
+    }
+    
+
+    
+    main .container-main .sobre-praia-pipa .linha-amarela{
+        border-top: #FFC82C 4px solid;
+        width: 100px;
+        margin-top: 10px;
+    }
+    
+    main .container-main .sobre-praia-pipa .praia-texto-e-imagem{
+        display: flex;
+        gap: 20px;
+    }
+    
+    .container-main .sobre-praia-pipa .praia-texto-e-imagem p{
+        width: 100%;
+    }
+    .container-main .sobre-praia-pipa .praia-texto-e-imagem figure{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;    
+        gap: 10px;
+    }
+
+    
+    .container-main .sobre-praia-pipa .praia-texto-e-imagem img{
+    width: 100%px;
+    transform: scale(10%);
+    }
+
+    
+    .sobre-praia-pipa .praia-texto-e-imagem figure figcaption{
+        text-align: left;
+        border: 2px solid;
+        width: 100%;
+        border-top: none;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 15px 0 8px 15px;
+    }
+    
+
+    main .secao-fotos-praias .fotos-praias{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        display: none;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+>>>>>>> 79ab4f11acb10e1fc7f67ebaedcf67de9c3c5e56
         width: 100%;
     }
     
