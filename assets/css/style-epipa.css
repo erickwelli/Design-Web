@@ -182,7 +182,7 @@ main .container-main .sobre-praia-pipa .linha-amarela{
 main .container-main .sobre-praia-pipa .praia-texto-e-imagem{
     display: flex;
     gap: 20px;
-    
+    flex-direction: row-reverse;
 }
 
 .container-main .sobre-praia-pipa .praia-texto-e-imagem p{
@@ -220,12 +220,15 @@ main .secao-fotos-praias{
     gap: 20px;
 }
 
+main .secao-fotos-praias{
+    
+}
+
 main .secao-fotos-praias .fotos-praias{
     display: flex;
-    width: 900px;
     justify-content: center;
     gap: 16px;
-    
+
 }
 
 .secao-fotos-praias .fotos-praias figure img{
@@ -238,7 +241,7 @@ main .secao-fotos-praias .fotos-praias figcaption{
     padding-top: 10px;
 }
 
-main .secao-fotos-praias span{
+main .secao-fotos-praias div span{
     font-size: 14px;
     color: #2648A1;
     font-family: 'Montserrat', sans-serif;
@@ -249,7 +252,6 @@ main .secao-fotos-praias h2{
     color: #2648A1;
     font-family: 'Montserrat', sans-serif;
 }
-
 footer{
     display: flex;
     align-items: center;
@@ -258,16 +260,13 @@ footer{
     height: 100%;
     background:linear-gradient(130deg, #0D3F82 23.84%,#001736 73.02%);
 }
-
 footer .container-footer{
     flex-wrap: wrap;
     display: flex;
     width: 70%;
     padding: 60px 0;
     justify-content: space-between;
-
 }
-
 footer .container-footer .left{
     display: flex;
     flex-direction: column;
@@ -277,7 +276,6 @@ footer .container-footer .left{
     font-weight: 300;
     color: #F9FAFC;
 }
-
 footer .container-footer .left .contatos{
     display: flex;
     flex-direction: column;
@@ -287,16 +285,13 @@ footer .container-footer .left .contatos{
     display: flex;
     gap: 20px;
 }
-
 .container-footer .left .contatos .footer-redes-sociais{
     display: flex;
     gap: 24px;
 }
-
 .peso-700{
     font-weight: 700;
 }
-
 footer .container-footer .middle{
     display: flex;
     flex-direction: column;
@@ -305,22 +300,18 @@ footer .container-footer .middle{
     gap: 20px;
     color: #E0E6ED;
 }
-
 footer .container-footer .middle nav{
     display: flex;
     gap: 24px;
 }
-
 .container-footer .middle nav menu{
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-
 .container-footer .middle nav menu a{
     color: #C0CCDA;
 }
-
 footer .container-footer .right{
     width: 270px;
     display: flex;
@@ -329,12 +320,10 @@ footer .container-footer .right{
     border-radius: 6px;
     padding: 32px 24px;
 }
-
 footer .container-footer .right h3{
     color: #1F2D3D;
     padding-bottom: 15px;
 }
-
 footer .container-footer .right span{
     color: #8492A6;
 }
@@ -348,140 +337,157 @@ footer .container-footer .right .text-card-footer{
     flex-direction: column;
     padding-bottom: 35px;
 }
-
 footer .container-footer .right .butao-telegram{
-    
     display: flex;
     background-color: #3A95E9;
     gap: 30px;
     padding: 12px 22px;
     border-radius: 5px;
 }
-
 @media (max-width: 568px){
     header{
-        width: 100%;
-        display: flex;
-        background-color: #203C86;
         padding: 12px 16px;
         box-sizing: border-box;
         margin-bottom: 24px;
         flex-direction: row;
         justify-content: center;
+        height: auto;
+    }
+    p{
+        width: 100%;
     }
     header .container-logo-e-navegacao .menu{
         display: flex;
     }
     header .linha{
-        width: 100%;
-        height: 1px;
-        background-color: #fff;
-        opacity: 0.2; 
         display: none;
-        margin: 12px 0;
     }
-    
     header .container-redes-sociais{
-        display: flex;
-        align-items: center;
         display: none;
     }
-    
-    header .container-redes-sociais .redes-sociais{
-        display: flex;
+    header .container-logo-e-navegacao{
         width: 100%;
-        gap: 50px;
-        justify-content: end;
-        color: #EFF2F7;
-        display: none;
-        align-items: center;
-        font-size: 11px;
-        font-weight: 300;
-        font-family: 'Montserrat', sans-serif;
     }
-    
-    header .container-redes-sociais .redes-sociais nav{
-        display: flex;
+    header .container-logo-e-navegacao menu{
         display: none;
+    }
+    header .container-logo-e-navegacao menu a:nth-child(1){
+        display: none;
+    }
+    main{
+        margin-bottom: 60px;
+    }
+
+    main .container-main{
+        padding: 0 16px;
+        
+        box-sizing: border-box; 
+    }
+    main .container-main .titulo-principal{
+        width: 90%;
         gap: 20px;
     }
-    
-    .container-redes-sociais .redes-sociais nav a{
-        display: flex;
-        align-items: center;
-        display: none;
-    }
-    
-    header .container-logo-e-navegacao{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    header .container-logo-e-navegacao menu{
-        display: flex;
-        gap: 45px;
-        display: none;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    header .container-logo-e-navegacao menu a:nth-child(1){
-        font-weight: 700;
-        text-decoration: underline;
-        text-underline-offset: 24px;
-        text-decoration-color: #FFC82C;
-        text-decoration-thickness: 4px;
-        display: none;
-    }
-
-    main{
-        display: none;
-    }
-
-    footer{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    main .container-main .titulo-principal div{
         width: 100%;
-        background:linear-gradient(130deg, #0D3F82 23.84%,#001736 73.02%);
     }
-    footer .container-footer{
-        flex-direction: column;
+    
+    main .container-main .titulo-principal div p{
+        width: 100%;
+    }
+    
+    main .container-main .icon-pipa{
+        margin: 50px 0 75px 0;
+    }
+    main .container-main figure img{
+        width: 278px;
+    }
+    
+    main .container-main .texto-inicial{
+        margin-bottom: 40px;
+    }
+    
+    main .container-main .sobre-praia-pipa{
         display: flex;
+        flex-direction: column;
+    }
+    
+    main .container-main .sobre-praia-pipa .praia-texto-e-imagem{
+        flex-direction: column;
+    }
+
+    .container-main .sobre-praia-pipa .praia-texto-e-imagem p{
+        width: 100%;
+    }
+    .container-main .sobre-praia-pipa .praia-texto-e-imagem figure{
+        margin-top: 40px;
+        width: 99%;    
+        border: 2px solid;
+        border-radius: 10px;
+        gap: 0;
+    }
+
+    .container-main .sobre-praia-pipa .praia-texto-e-imagem img{
+    width: 100%;
+    transform: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    
+    }
+
+    .sobre-praia-pipa .praia-texto-e-imagem figure figcaption{
+        border: none;
+        width: 100%;
+    }
+
+    main .secao-fotos-praias{
+        display: flex;
+        width: 536px;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0;
+        
+    }
+    
+
+    main .secao-fotos-praias .fotos-praias{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    
+    main .secao-fotos-praias .fotos-praias figure{
+        width: 100%;
+    }
+    .secao-fotos-praias .fotos-praias figure img{
+        width: 100%;
+    }
+
+    main .secao-fotos-praias .fotos-praias figcaption{
+        background: none;
+        padding-top: 10px;
+    }
+    
+    footer .container-footer{
+        flex-wrap: nowrap;
+        flex-direction: column;
         width: 90%;
         box-sizing: border-box;
         gap: 24px;
     }
-    footer .container-footer .left{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        font-weight: 300;
-    }
+
     footer .container-footer .middle nav{
-        display: flex;
         flex-direction: column;
-        gap: 24px;
     }
+
     footer .container-footer .right{
         display: flex;
         width: 90%;
-        flex-direction: column;
-        background-color: #fff;
-        border-radius: 6px;
         align-items: center;
-        padding: 32px 24px;
     }
     footer .container-footer .right .container-card{
         align-items: center;
     }
     footer .container-footer .right .butao-telegram{
-        display: flex;
-        background-color: #3A95E9;
-        gap: 30px;
         width: 50%;
-        padding: 12px 22px;
-        border-radius: 5px;
     }
-}
