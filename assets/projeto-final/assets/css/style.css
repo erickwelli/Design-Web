@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;  
+    list-style: none;
+}
+
+.container{
+    width: 820px;
+    display: flex;
+}
+
+.container-global{
+    width: 100%;
+    display: flex;
+}
+
+header{
+    font-family: Roboto, sans-serif;
+    display: flex;
+    border-bottom: 1px solid #E5E7EB;
+    background: #FFF;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+header .funcoes{
+    display: flex;
+    gap: 16px;
+}
+
+header .funcoes .inscricao{
+    gap: 10px;
+}
+
+header .funcoes .inscricao a{
+    display: flex;
+    gap: 10px;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: white;
+    background: #F60;
+    font-size: 14px;
+}
+
+header .funcoes .inscricao a:hover{
+    background: #FD8535;
+}
+
+header .funcoes .usuario{
+    
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1100px;
+}
+
+.left{
+    padding: 40px var(--spacing-spacing-md, 24px);
+    font-family: Inter, sans-serif;
+    color: #0D5EAF;
+}
+
+.fa-chevron-left{
+    font-size: 24px;
+    text-align: end;
+}
+
+.left .menu-top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left nav ul li{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    width: 180px;
+}
+.left a{
+    color: inherit;
+}
+.left nav ul li .icon-container{
+    display: flex;
+    padding: 20px 15px;
+}
+.left nav ul li:nth-child(2) .icon-container{
+    padding: 20px 13px;
+}
+.left nav ul li:nth-child(4) .icon-container{
+    padding: 20px 15.5px;
+}
+
+.fa-border-all{
+    color: white;
+}
+.fa-calendar-days,.fa-paper-plane,.fa-square-poll-vertical,.fa-users{
+    color: #0D5EAF;
+}
+.left ul li:active div i{
+    color: white;
+}
+
+.left ul li:hover{
+    background: #F2F9FD;
+}
+
+.left nav ul li:active div{
+    background-color: #0D5EAF;
+    
+}
+
+.left .menu-top ul li:nth-child(1) div{
+    background-color: #0D5EAF;
+}
+
