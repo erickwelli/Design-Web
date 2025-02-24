@@ -10,9 +10,10 @@
     list-style: none;
 }
 .container{
-    width: 820px;
+    width: 1200px;
     display: flex;
     justify-content: center;
+    padding: 30px;
 }
 .container-global{
     width: 100%;
@@ -35,19 +36,18 @@ header .funcoes{
 header .funcoes .inscricao{
     gap: 10px;
 }
-
 header .funcoes .inscricao a{
     display: flex;
     gap: 10px;
     padding: 4px 16px;
     justify-content: center;
     align-items: center;
+    height: 32px;
     border-radius: 4px;
     color: white;
     background: #F60;
     font-size: 14px;
 }
-
 header .funcoes .inscricao a:hover{
     background: #FD8535;
 }
@@ -61,13 +61,13 @@ aside{
     flex-direction: column;
     justify-content: space-between;
 }
-
 .left{
     padding: 40px var(--spacing-spacing-md, 24px);
     font-family: Inter, sans-serif;
     color: #0D5EAF;
     justify-content: space-between;
     height: 1100px;
+    border-right: 1px solid #E5E7EB;
 }
 
 .left .menu-top a{
@@ -76,13 +76,11 @@ aside{
 .fa-chevron-left{
     font-size: 24px;
 }
-
 .left .menu-top{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .left nav ul li{
     display: flex;
     gap: 15px;
@@ -102,7 +100,6 @@ aside{
 .left nav ul li:nth-child(4) .icon-container{
     padding: 20px 15.5px;
 }
-
 .fa-border-all{
     color: white;
 }
@@ -133,21 +130,38 @@ main{
 }
 .container .main-header{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .container .main-header .principal{
     display: flex;
     flex-direction: column;
+    gap: 6px;
 }
 .container .main-header .principal .titulo{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .container .main-header .principal .sub-principal{
     display: flex;
+    gap: 16px;
 }
 .main-header .principal .sub-principal .date,.local,.inscricoes{
     display: flex;
+    gap: 6px;
 }
 .main-header i{
     font-size: 18px;
+}
+.main-header .principal h1{
+    font-size: 24px;
+}
+.main-header .editar a{
+    display: flex;
+    padding: 12px;
+    background-color: #F2F9FD;
+    color: #0F6ECD;
+    gap: 6px;
+    border-radius: 6px;
 }
