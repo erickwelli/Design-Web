@@ -10,10 +10,10 @@
     list-style: none;
 }
 .container{
-    width: 1200px;
+    width: 800px;
     display: flex;
-    justify-content: center;
     padding: 30px;
+    flex-direction: column;
 }
 .container-global{
     width: 100%;
@@ -132,11 +132,13 @@ main{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 100px;
 }
 .container .main-header .principal{
     display: flex;
     flex-direction: column;
     gap: 6px;
+    font-family: Inter, sans-serif;
 }
 .container .main-header .principal .titulo{
     display: flex;
@@ -156,12 +158,55 @@ main{
 }
 .main-header .principal h1{
     font-size: 24px;
+    font-family: Archivo, sans-serif;
 }
 .main-header .editar a{
     display: flex;
     padding: 12px;
     background-color: #F2F9FD;
     color: #0F6ECD;
+    font-family: Inter, sans-serif;
     gap: 6px;
+    align-items: center;
     border-radius: 6px;
+}
+
+main .container .cards{
+    display: flex;
+    gap: 24px;
+}
+
+main .container .cards .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background: #F2F9FD;
+    gap: 30px;
+    padding: 12px 16px 24px 16px;
+    font-family: Inter,sans-serif;
+    color: #2E96C9;
+    width: 220px;
+    font-size: 14px;
+}
+
+.cards .card i{
+    font-size: 16px;
+}
+
+.cards .card .card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards .card .card-header .card-titulo{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.cards .card p{
+    font-family: Archivo, sans-serif;
+    color: #374151;
+    font-size: 32px;
+    font-weight: 700;
 }
