@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 *{
     margin: 0;
@@ -9,15 +10,23 @@
     border: none;  
     list-style: none;
 }
-.container{
-    width: 800px;
+
+body{
     display: flex;
-    padding: 30px;
+    justify-content: center;
     flex-direction: column;
+}
+.container{
+    width: 1100px;
+    display: flex;
+    padding: 30px;  
+    flex-direction: column;
+    gap: 40px;
 }
 .container-global{
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 header{
     font-family: Roboto, sans-serif;
@@ -26,6 +35,8 @@ header{
     background: #FFF;
     justify-content: space-between;
     padding: 20px 50px;
+    color: #0F3679;
+    font-weight: 700;
 }
 
 header .funcoes{
@@ -53,13 +64,30 @@ header .funcoes .inscricao a:hover{
 }
 
 header .funcoes .usuario{
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    cursor: pointer;
+}
+header .funcoes .usuario figure{
+    border: 2px solid #D1D5DB;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+header .funcoes .usuario img{
+    border-radius: 100px;
+    width: 24px;
+    height: 24px;
 }
 
 aside{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .left{
     padding: 40px var(--spacing-spacing-md, 24px);
@@ -73,7 +101,7 @@ aside{
 .left .menu-top a{
     text-align: end;
 }
-.fa-chevron-left{
+.fa-angles-left, .fa-angles-right{
     font-size: 24px;
 }
 .left .menu-top{
@@ -86,6 +114,10 @@ aside{
     gap: 15px;
     align-items: center;
     width: 180px;
+    cursor: pointer;
+}
+.left nav ul li:nth-child(1){
+    background: #F2F9FD;
 }
 .left a{
     color: inherit;
@@ -102,9 +134,6 @@ aside{
 }
 .fa-border-all{
     color: white;
-}
-.fa-calendar-days,.fa-paper-plane,.fa-square-poll-vertical,.fa-users,.fa-gear,.fa-rotate-180{
-    color: #0D5EAF;
 }
 .left ul li:active div i{
     color: white;
@@ -132,7 +161,6 @@ main{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 100px;
 }
 .container .main-header .principal{
     display: flex;
@@ -173,7 +201,7 @@ main{
 
 main .container .cards{
     display: flex;
-    gap: 24px;
+    justify-content: space-between;
 }
 
 main .container .cards .card{
@@ -182,10 +210,10 @@ main .container .cards .card{
     border-radius: 6px;
     background: #F2F9FD;
     gap: 30px;
-    padding: 12px 16px 24px 16px;
+    padding: 14px 18px 26px 18px;
     font-family: Inter,sans-serif;
     color: #2E96C9;
-    width: 220px;
+    width: 280px;
     font-size: 14px;
 }
 
@@ -210,3 +238,384 @@ main .container .cards .card{
     font-size: 32px;
     font-weight: 700;
 }
+
+.cards .card .card-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 8px ;
+}
+
+.cards .card .card-texto .text-card3{
+    display: flex;
+    align-items: center;
+}
+
+.card .card-texto .text-card3 p:nth-last-child(1){
+    font-size: 16px;
+}
+
+.card .card-header .links{
+    gap: 10px;
+    display: flex;
+}
+
+.container .funcoes{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.container .funcoes .funcoes-titulo{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: Roboto, sans-serif;
+}
+
+.container .funcoes .botoes{
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter, sans-serif;
+}
+
+.container .funcoes .botoes a{
+    color: #2E96C9;
+}
+
+.container .funcoes .botoes span{
+    font-size: 14px;
+}
+
+.container .funcoes .botoes .itens{
+    display: flex;
+    gap: 50px;
+}
+
+.funcoes .botoes .itens a:hover{
+    color: white;
+}
+
+.funcoes .botoes .itens .itens-botao{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    padding-bottom: 24px;
+    min-width: 94px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #2E96C9;
+    gap: 8px;
+    box-shadow: 0px 2px 2px 0px rgba(15, 54, 121, 0.15);
+}
+
+.funcoes .botoes .itens .itens-botao:hover{
+    background: #2E96C9;
+    border: 1px solid #2E96C9;
+}
+
+.botoes .itens .itens-botao div{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.funcoes .mais-itens{
+    display: flex;
+}
+.funcoes .mais-itens .botao{
+    display: flex;
+    padding: 16px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 8px;
+    border: 1px dashed #90CAE9;
+    justify-content: center;
+    width: 94px;
+    background: #FCFCFC;    
+}
+.funcoes .mais-itens div{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #90CAE9;
+}
+.section-inscricao{
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto, sans-serif;
+    color: #494E57;
+}
+
+.section-inscricao .section-tabela,.grafico{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.section-inscricao .section-tabela{
+    width: 64%;
+}
+.section-inscricao .section-tabela .tabela-titulo{
+    display: flex;
+    justify-content: space-between;
+}
+.section-inscricao .section-tabela .tabela-titulo a{
+    color: #3F5E94;
+    text-decoration: underline;
+}
+
+.section-tabela table{
+    border-spacing: 0 10px;
+}
+
+.section-tabela table tr td{
+    padding: 12px 24px;
+    font-size: 12px;
+    border: 1px solid #DCEFF8;
+    border-left: none;
+    border-right: none;
+}
+
+.section-tabela table tr:nth-last-child(1) td{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.section-tabela table tr td:nth-child(1){
+    border-left: 1px solid #DCEFF8;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.section-tabela table tr td:nth-last-child(1){
+    border-right: 1px solid #DCEFF8;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.section-tabela table tr td div{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.section-tabela table tr td i{
+    font-size: 8px;
+}
+
+.section-inscricao .grafico .inscricoes-grafico{
+    display: flex;
+    border-radius: 4px;
+    color: #FEFEFE;
+    font-family: Montserrat, sans-serif;
+}
+.section-inscricao .grafico .inscricoes-grafico h3{
+    font-size: 14px;
+}
+.section-inscricao .grafico .inscricoes-grafico h4{
+    font-size: 12px;
+    font-weight: 400;
+}
+.grafico .inscricoes-grafico .percentual{
+    width: 60px;
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grafico .inscricoes-grafico .percentual:nth-child(1){
+    background-color: #2E96C9;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.grafico .inscricoes-grafico .percentual:nth-child(2){
+    background-color: #4FADDB;
+}
+.grafico .inscricoes-grafico .percentual:nth-child(3){
+    background-color: #90CAE9;
+}
+.grafico .inscricoes-grafico .percentual:nth-child(4){
+    background-color: #E4F1FA;
+    color: #1A1C20;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.grafico .legendas-grafico{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.grafico .legendas-grafico .legenda{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 12px;
+}
+.grafico .legendas-grafico .legenda:nth-child(1) i{
+    color: #2E96C9;
+}
+.grafico .legendas-grafico .legenda:nth-child(2) i{
+    color: #4FADDB;
+}
+.grafico .legendas-grafico .legenda:nth-child(3) i{
+    color: #90CAE9;
+}
+.grafico .legendas-grafico .legenda:nth-child(4) i{
+    color: #E4F1FA;
+}
+.right{
+    height: 1101px;
+    padding: var(--spacing-spacing-xl, 48px) var(--spacing-spacing-md, 24px) var(--spacing-spacing-lg, 32px) var(--spacing-spacing-md, 24px);
+    flex-direction: column;
+    gap: 24px;
+    font-family: Roboto, sans-serif;
+    background: #F2F9FD;
+}
+.right h2{
+    color: #0F3679;
+    font-size: 18px;
+}
+.right span{
+    font-size: 14px;
+}
+.right .section-tarefas{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.right .section-tarefas i{
+    font-size: 14px;
+}
+.right .section-tarefas .tarefas-titulo span{
+   color: #092049;
+}
+.right .section-tarefas .tarefas-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.right .section-tarefas .tarefas-lista a{
+    color: #0C2B61;
+}
+.right .section-tarefas .tarefas-lista a:hover{
+    color: #FFF;
+}
+.right .section-tarefas .tarefas-lista a:nth-child(3){
+    color: #FFF;
+}
+.right .section-tarefas .tarefas-lista .tarefa{
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    border-radius: 6px;
+    gap: 16px;
+    border: 1px solid #FEFEFE;
+    background-color: #FEFEFE;
+    box-shadow: -2px 2px 6px 0px rgba(15, 54, 121, 0.15);
+    position: relative;
+}
+.right .section-tarefas .tarefas-lista .tarefa:hover{
+    background-color: #0D5EAF;
+    border: 1px solid #0D5EAF;
+}
+.tarefas-lista .tarefa i{
+    background-color: #E7EBF2;
+    border-radius: 200px;
+    display: flex;
+    width: 14px;
+    height: 14px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #3F5E94;
+    border: 1px solid #E7EBF2;
+}
+.tarefas-lista .tarefa:hover i{
+    background-color: #0D5EAF;
+    border: 1px solid #fff;
+    color: #FFF;
+}
+.tarefas-lista .tarefa .icon p{
+    color: #FFF;
+    background: #0F3679;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: absolute;
+    top: 8px;
+    left: 38px;
+}
+.tarefas-lista .tarefa:hover .icon p{
+    background-color: #0D5EAF;
+}
+a:nth-child(3) .tarefa .icon p{
+    background-color: #0D5EAF;
+}
+.tarefas-lista a:nth-child(3) .tarefa i{
+    background-color: #0D5EAF;
+    border: 1px solid white;
+    color: #FFF;
+}
+.right .section-tarefas .tarefas-lista a:nth-child(3) .tarefa{
+    background-color: #0D5EAF;
+    border: #0D5EAF;
+}
+.right .section-atividades{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.right .section-atividades h4{
+    font-size: 14px;
+    color: #3F5E94;
+}
+
+.right .section-atividades p{
+    line-height: 1.2;
+    color: #494E57;
+    font-size: 14px;
+}
+
+.right .section-atividades span{
+    font-size: 12px;
+    color: #797D84;
+}
+
+.right .section-atividades .titulo-atividades{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right .section-atividades .titulo-atividades a{
+    color: #092049;
+    text-decoration: underline;
+}
+
+.right .atividades{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.right .atividades .atividade{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FEFEFE;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    max-width: 270px;
+}
+
+.right .atividades .atividade:hover{
+    background-color: #E3F4FE;
+}   
