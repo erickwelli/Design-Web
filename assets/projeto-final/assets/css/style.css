@@ -58,6 +58,7 @@ header .funcoes .inscricao a{
     color: white;
     background: #F60;
     font-size: 14px;
+    font-weight: 500;
 }
 header .funcoes .inscricao a:hover{
     background: #FD8535;
